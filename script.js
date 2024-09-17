@@ -1,5 +1,5 @@
 "use strict";
-console.log('hello world');
+console.log("hello world");
 const country = "Bangladesh";
 console.log(country);
 const sum = (num1, num2) => {
@@ -20,6 +20,21 @@ console.log(b);
 let obj;
 obj = {
     name: "Saiful",
-    age: 16
+    age: 16,
 };
 console.log(obj);
+// any type
+let z;
+z = 10;
+z = "hello";
+console.log(z);
+const c = [];
+c.push("Bangladesh");
+c.push(56);
+console.log(c);
+let d;
+d = {
+    name: "Bangladesh",
+    age: 56
+};
+console.log(d);
