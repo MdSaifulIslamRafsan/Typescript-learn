@@ -16,3 +16,10 @@ let b;
 b = 34;
 b = "hello world";
 console.log(b);
+// schema type
+let obj;
+obj = {
+    name: "Saiful",
+    age: 16
+};
+console.log(obj);
