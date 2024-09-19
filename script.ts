@@ -70,3 +70,19 @@ const myFunction = (a:number , b:number , c?:number , d: number = 10) =>{
 }
 
 console.log(myFunction(20 , 30))
+
+// Aliases type
+
+type stringOrNum = string | number;
+type userObj = {name: string, age: number}
+
+
+const userDetails = (id: stringOrNum , user: userObj) => {
+  console.log(`user id is ${id} name is ${user?.name} and age is ${user?.age}`)
+ 
+}
+userDetails(12, {name:"saiful" , age: 22})
+const sayHello = (user: userObj) => {
+  console.log(`hello ${user?.age >= 50 ? 'sir' : 'mr'} ${user?.name}`)
+}
+sayHello({name: "saiful" , age: 22})

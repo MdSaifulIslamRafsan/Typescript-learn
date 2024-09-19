@@ -50,3 +50,11 @@ const myFunction = (a, b, c, d = 10) => {
     // return a + b
 };
 console.log(myFunction(20, 30));
+const userDetails = (id, user) => {
+    console.log(`user id is ${id} name is ${user === null || user === void 0 ? void 0 : user.name} and age is ${user === null || user === void 0 ? void 0 : user.age}`);
+};
+userDetails(12, { name: "saiful", age: 22 });
+const sayHello = (user) => {
+    console.log(`hello ${(user === null || user === void 0 ? void 0 : user.age) >= 50 ? 'sir' : 'mr'} ${user === null || user === void 0 ? void 0 : user.name}`);
+};
+sayHello({ name: "saiful", age: 22 });
