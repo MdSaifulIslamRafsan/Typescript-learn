@@ -21,6 +21,7 @@ let obj;
 obj = {
     name: "Saiful",
     age: 16,
+    price: 1220
 };
 console.log(obj);
 // any type
@@ -38,3 +39,14 @@ d = {
     age: 56
 };
 console.log(d);
+// function type 
+let myFunc;
+myFunc = () => {
+    console.log('hello');
+};
+const myFunction = (a, b, c, d = 10) => {
+    console.log(c);
+    console.log(d);
+    // return a + b
+};
+console.log(myFunction(20, 30));

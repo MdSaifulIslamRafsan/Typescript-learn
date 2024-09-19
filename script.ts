@@ -18,6 +18,7 @@ array.push("hello world");
 let b: string | number;
 b = 34;
 b = "hello world";
+
 console.log(b);
 
 // schema type
@@ -25,10 +26,12 @@ console.log(b);
 let obj: {
   name: string;
   age: number;
+  price: number;
 };
 obj = {
   name: "Saiful",
   age: 16,
+  price: 1220
 };
 console.log(obj);
 
@@ -53,3 +56,17 @@ d = {
     age:56
 }
 console.log(d)
+
+// function type 
+let myFunc : Function;
+
+ myFunc = () =>{
+  console.log('hello')
+}
+const myFunction = (a:number , b:number , c?:number , d: number = 10) =>{
+  console.log(c)
+  console.log(d)
+  // return a + b
+}
+
+console.log(myFunction(20 , 30))
