@@ -121,10 +121,10 @@ user = (id: number | string , userInfo: {
 
 // Classes type
 
-class player{
-name: string;
-age: number;
-country: string;
+class player{ 
+private name: string;
+public age: number;
+readonly country: string;
 
 constructor(n:string, a:number, c:string){
   this.name = n;
@@ -144,3 +144,26 @@ const players: player[] = [];
 players.push(mashrafi)
 players.push(sakib)
 console.log(players)
+
+
+// Access Modifiers
+
+class player1{ 
+ 
+  
+  constructor( private name: string,
+    public age: number,
+    readonly country: string){}
+  
+  play(){
+    console.log(`${this.name} from ${this.country} is playing`)
+  }
+  }
+  
+  const mashrafi1 = new player("mashrafi", 40, "Banglasdesh");
+  const sakib1 = new player("sakib", 35, "Banglasdesh");
+  
+  const players1: player[] = [];
+  players.push(mashrafi)
+  players.push(sakib)
+  console.log(players)

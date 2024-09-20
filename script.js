@@ -93,3 +93,20 @@ const players = [];
 players.push(mashrafi);
 players.push(sakib);
 console.log(players);
+// Access Modifiers
+class player1 {
+    constructor(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
+    }
+    play() {
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
+}
+const mashrafi1 = new player("mashrafi", 40, "Banglasdesh");
+const sakib1 = new player("sakib", 35, "Banglasdesh");
+const players1 = [];
+players.push(mashrafi);
+players.push(sakib);
+console.log(players);
