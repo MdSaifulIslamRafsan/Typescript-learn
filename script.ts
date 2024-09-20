@@ -86,3 +86,23 @@ const sayHello = (user: userObj) => {
   console.log(`hello ${user?.age >= 50 ? 'sir' : 'mr'} ${user?.name}`)
 }
 sayHello({name: "saiful" , age: 22})
+
+
+// Function Signatures
+
+let AddFunction : (x: number, y:number) => number;
+
+AddFunction = (a:number, b:number) => {
+  return a + b
+}
+
+let calculation : (x: number, y:number, z: string) => number;
+calculation = (a:number , b:number , c: string) => {
+  if(c === "add"){
+    return a + b
+  } else{
+    return a - b
+  }
+}
+
+console.log(calculation(10 , 20 , "add"))

@@ -58,3 +58,18 @@ const sayHello = (user) => {
     console.log(`hello ${(user === null || user === void 0 ? void 0 : user.age) >= 50 ? 'sir' : 'mr'} ${user === null || user === void 0 ? void 0 : user.name}`);
 };
 sayHello({ name: "saiful", age: 22 });
+// Function Signatures
+let AddFunction;
+AddFunction = (a, b) => {
+    return a + b;
+};
+let calculation;
+calculation = (a, b, c) => {
+    if (c === "add") {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
+};
+console.log(calculation(10, 20, "add"));
