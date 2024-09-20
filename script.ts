@@ -105,4 +105,42 @@ calculation = (a:number , b:number , c: string) => {
   }
 }
 
-console.log(calculation(10 , 20 , "add"))
+console.log(calculation(10 , 20 , "add"));
+
+let user : (id: number | string , userInfo: {
+  name: string,
+  age: number
+}) => void
+
+user = (id: number | string , userInfo: {
+  name: string,
+  age: number
+}) => {
+ 
+}
+
+// Classes type
+
+class player{
+name: string;
+age: number;
+country: string;
+
+constructor(n:string, a:number, c:string){
+  this.name = n;
+  this.age = a;
+  this.country = c;
+}
+
+play(){
+  console.log(`${this.name} from ${this.country} is playing`)
+}
+}
+
+const mashrafi = new player("mashrafi", 40, "Banglasdesh");
+const sakib = new player("sakib", 35, "Banglasdesh");
+
+const players: player[] = [];
+players.push(mashrafi)
+players.push(sakib)
+console.log(players)

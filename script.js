@@ -73,3 +73,23 @@ calculation = (a, b, c) => {
     }
 };
 console.log(calculation(10, 20, "add"));
+let user;
+user = (id, userInfo) => {
+};
+// Classes type
+class player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
+}
+const mashrafi = new player("mashrafi", 40, "Banglasdesh");
+const sakib = new player("sakib", 35, "Banglasdesh");
+const players = [];
+players.push(mashrafi);
+players.push(sakib);
+console.log(players);
