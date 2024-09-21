@@ -1,3 +1,5 @@
+import { player2 } from "./module/player2.js";
+
 console.log("hello world");
 
 const country = "Bangladesh";
@@ -160,10 +162,23 @@ class player1{
   }
   }
   
-  const mashrafi1 = new player("mashrafi", 40, "Banglasdesh");
-  const sakib1 = new player("sakib", 35, "Banglasdesh");
+  const mashrafi1 = new player1("mashrafi", 40, "Banglasdesh");
+  const sakib1 = new player1("sakib", 35, "Banglasdesh");
   
-  const players1: player[] = [];
-  players.push(mashrafi)
-  players.push(sakib)
-  console.log(players)
+  const players1: player1[] = [];
+  players1.push(mashrafi1)
+  players1.push(sakib1)
+  console.log(players1)
+
+
+  // Module System
+
+
+  
+  const mashrafi2 = new player2("mashrafi", 40, "Banglasdesh");
+  const sakib2 = new player2("sakib", 35, "Banglasdesh");
+  
+  const players2: player2[] = [];
+  players2.push(mashrafi2)
+  players2.push(sakib2)
+  console.log(players2)
