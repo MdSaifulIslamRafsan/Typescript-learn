@@ -117,3 +117,9 @@ const players2 = [];
 players2.push(mashrafi2);
 players2.push(sakib2);
 console.log(players2);
+function drawRectangle(options) {
+    let width = options.width;
+    let length = options.length;
+}
+let threeDOptions = { width: 20, length: 20, height: 10 };
+drawRectangle(threeDOptions);
