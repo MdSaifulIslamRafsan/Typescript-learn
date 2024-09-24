@@ -271,3 +271,13 @@ interface ApiResponse <T>{
       something: 300
     }
   };
+
+
+  // Tuples type
+
+  let arr = [3 , 'hello' , {p:3}]
+
+  arr[2] = 3;
+
+  let e: [number , string , object] = [3 , 'hello' , {p:3}];
+  

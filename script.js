@@ -172,3 +172,7 @@ const response2 = {
         something: 300
     }
 };
+// Tuples type
+let arr = [3, 'hello', { p: 3 }];
+arr[2] = 3;
+let e = [3, 'hello', { p: 3 }];
