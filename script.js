@@ -148,3 +148,11 @@ let user3 = addId2({
     name: "mashrafi",
     age: 40
 });
+const response1 = {
+    status: 200,
+    type: "good",
+    data: {
+        name: 'test',
+        something: 300
+    }
+};

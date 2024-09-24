@@ -234,3 +234,21 @@ let threeDOptions = {width:20, length:20 , height: 10}
     name: "mashrafi",
     age: 40
   });
+
+
+  // Generics type and interface
+
+  interface apiResponse <T>{
+    status: number,
+    type: string,
+    data: T
+  }
+
+  const response1 : apiResponse<object> = {
+    status : 200,
+    type : "good",
+    data : {
+      name: 'test',
+      something: 300
+    }
+  };
