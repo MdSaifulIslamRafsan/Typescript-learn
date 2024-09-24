@@ -123,3 +123,28 @@ function drawRectangle(options) {
 }
 let threeDOptions = { width: 20, length: 20, height: 10 };
 drawRectangle(threeDOptions);
+// Generics type
+const addId = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user1 = addId({
+    name: "mashrafi",
+    age: 40
+});
+const addId1 = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user2 = addId1({
+    name: "mashrafi",
+    age: 40
+});
+const addId2 = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user3 = addId2({
+    name: "mashrafi",
+    age: 40
+});

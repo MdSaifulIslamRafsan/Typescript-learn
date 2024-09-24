@@ -197,3 +197,40 @@ class player1{
   }
 let threeDOptions = {width:20, length:20 , height: 10}
   drawRectangle(threeDOptions);
+
+  // Generics type
+
+  const addId = <T>(obj: T) =>{
+    let id = Math.floor(Math.random() * 100)
+    return {...obj, id}
+  }
+
+  let user1 = addId({
+    name: "mashrafi",
+    age: 40
+  });
+
+
+  const addId1 = <T extends object>(obj: T) =>{
+    let id = Math.floor(Math.random() * 100)
+    return {...obj, id}
+  }
+
+  let user2 = addId1({
+    name: "mashrafi",
+    age: 40
+  });
+  const addId2 = <
+  T extends {
+    name: string;
+    age: number;
+  }
+  >(obj: T) =>{
+    let id = Math.floor(Math.random() * 100)
+    return {...obj, id}
+  }
+
+  let user3 = addId2({
+    name: "mashrafi",
+    age: 40
+  });
