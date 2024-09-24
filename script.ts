@@ -252,3 +252,22 @@ let threeDOptions = {width:20, length:20 , height: 10}
       something: 300
     }
   };
+  
+
+  // enums 
+
+enum ResponseType { success , failure, unauthenticated , forbidden }
+interface ApiResponse <T>{
+    status: number,
+    type: ResponseType,
+    data: T
+  }
+
+  const response2 : ApiResponse<object> = {
+    status : 200,
+    type : ResponseType.success,
+    data : {
+      name: 'test',
+      something: 300
+    }
+  };

@@ -156,3 +156,19 @@ const response1 = {
         something: 300
     }
 };
+// enums 
+var ResponseType;
+(function (ResponseType) {
+    ResponseType[ResponseType["success"] = 0] = "success";
+    ResponseType[ResponseType["failure"] = 1] = "failure";
+    ResponseType[ResponseType["unauthenticated"] = 2] = "unauthenticated";
+    ResponseType[ResponseType["forbidden"] = 3] = "forbidden";
+})(ResponseType || (ResponseType = {}));
+const response2 = {
+    status: 200,
+    type: ResponseType.success,
+    data: {
+        name: 'test',
+        something: 300
+    }
+};
